@@ -33,6 +33,11 @@ define('DB_COLLATE', '');
 //define('SITE_ID_CURRENT_SITE', $_SERVER['SITE_ID_CURRENT_SITE']);
 //define('BLOG_ID_CURRENT_SITE', $_SERVER['BLOG_ID_CURRENT_SITE']);
 
+/** 	Domain Mapping
+ ****************************************/
+//define('SUNRISE', 'on');
+
+
 /** 	Define Error Logging
  ****************************************/
 define('WP_DEBUG', $_SERVER['WP_DEBUG']);
