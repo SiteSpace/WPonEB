@@ -23,6 +23,10 @@ define('DB_CHARSET', 'utf8mb4');
 /** The Database Collate type. Don't change this if in doubt. */
 define('DB_COLLATE', '');
 
+/** 	Set Default Theme
+ ****************************************/
+define('WP_DEFAULT_THEME', 'Divi-Child');
+
 /** 	Wordpress Multisite
  ****************************************/
 //define('WP_ALLOW_MULTISITE', $_SERVER['WP_ALLOW_MULTISITE']);
@@ -32,6 +36,11 @@ define('DB_COLLATE', '');
 //define('PATH_CURRENT_SITE', $_SERVER['PATH_CURRENT_SITE']);
 //define('SITE_ID_CURRENT_SITE', $_SERVER['SITE_ID_CURRENT_SITE']);
 //define('BLOG_ID_CURRENT_SITE', $_SERVER['BLOG_ID_CURRENT_SITE']);
+
+/** 	Domain Mapping
+ ****************************************/
+//define('SUNRISE', 'on');
+
 
 /** 	Define Error Logging
  ****************************************/

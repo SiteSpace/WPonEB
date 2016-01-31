@@ -1,0 +1,3 @@
+[submodule "wp-content/plugins/backup-restore-divi-theme-options"]
+	path = wp-content/plugins/backup-restore-divi-theme-options
+	url = https://github.com/DiviSpace/backup-restore-divi-theme-options
