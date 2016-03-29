@@ -67,6 +67,10 @@ define('DISALLOW_FILE_MODS', true );
 define('AUTOMATIC_UPDATER_DISABLED', true );
 define('WP_AUTO_UPDATE_CORE', false );
 
+/** Temp Directory 
+ ****************************************/
+define( 'WP_TEMP_DIR', '/var/app/current/local-temp' );
+
 /*********************************************/
 /* That's all, stop editing! Happy blogging. */
 /*********************************************/
