@@ -6,6 +6,7 @@ RewriteBase /
 RewriteRule ^index\.php$ - [L]
 
 # add a trailing slash to /wp-admin
+#######################################
 RewriteRule ^wp-admin$ wp-admin/ [R=301,L]
 
 RewriteCond %{REQUEST_FILENAME} -f [OR]
@@ -14,3 +15,9 @@ RewriteRule ^ - [L]
 RewriteRule ^(wp-(content|admin|includes).*) $1 [L]
 RewriteRule ^(.*\.php)$ $1 [L]
 RewriteRule . index.php [L]
+
+# Define Upload Sizes as EB sets these to 2M
+# This is then re-defined in wp-config via environment variables
+#######################################
+php_value upload_max_filesize 256M
+php_value post_max_size 256M

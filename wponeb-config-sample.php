@@ -67,9 +67,14 @@ define('DISALLOW_FILE_MODS', true );
 define('AUTOMATIC_UPDATER_DISABLED', true );
 define('WP_AUTO_UPDATE_CORE', false );
 
-/** Temp Directory 
+/** Temp Directory
  ****************************************/
 define( 'WP_TEMP_DIR', '/var/app/current/local-temp' );
+
+/** Define Upload Limit
+(This is also defined as 256MB in .htaccess then restricted here)
+ ****************************************/
+define('WP_MEMORY_LIMIT', $_SERVER['WP_MEMORY_LIMIT']);
 
 /*********************************************/
 /* That's all, stop editing! Happy blogging. */
