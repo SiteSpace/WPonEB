@@ -38,6 +38,11 @@ define('DB_COLLATE', '');
 define('WP_DEBUG', $_SERVER['WP_DEBUG']);
 define('WP_DEBUG_LOG', $_SERVER['WP_DEBUG_LOG']);
 define('WP_DEBUG_DISPLAY', $_SERVER['WP_DEBUG_DISPLAY']);
+//Setting log location if logs are turned on
+if (defined('WP_DEBUG_LOG') && WP_DEBUG_LOG) {
+    ini_set( 'error_log', '/var/app/current/wp-content/uploads/wponeb-debug.txt' );
+}
+
 
 /** 	Post Revisions & AutoSave
  ****************************************/
