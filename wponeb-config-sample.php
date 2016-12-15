@@ -74,7 +74,7 @@ define('WP_AUTO_UPDATE_CORE', false );
 
 /** Temp Directory
  ****************************************/
-define( 'WP_TEMP_DIR', '/var/app/current/local-temp' );
+define( 'WP_TEMP_DIR', '/var/app/current/wp-content/temp' );
 
 /** Define Upload Limit
 (This is also defined as 256MB in .htaccess then restricted here)
