@@ -23,6 +23,16 @@ define('DB_CHARSET', 'utf8mb4');
 /** The Database Collate type. Don't change this if in doubt. */
 define('DB_COLLATE', '');
 
+/** 	SSL Settings
+ ****************************************/
+//define('FORCE_SSL_ADMIN', true); // Force SSL on Admin URL (/wp-admin/)
+if (strpos($_SERVER['HTTP_X_FORWARDED_PROTO'], 'https') !== false)
+       $_SERVER['HTTPS']='on'; // Allow SSL on Reverse Proxy
+
+/** 	Set Default Theme
+****************************************/
+//define('WP_DEFAULT_THEME', 'WPonEB'); // Set default theme
+
 /** 	Wordpress Multisite
  ****************************************/
 //define('WP_ALLOW_MULTISITE', $_SERVER['WP_ALLOW_MULTISITE']);
@@ -32,6 +42,9 @@ define('DB_COLLATE', '');
 //define('PATH_CURRENT_SITE', $_SERVER['PATH_CURRENT_SITE']);
 //define('SITE_ID_CURRENT_SITE', $_SERVER['SITE_ID_CURRENT_SITE']);
 //define('BLOG_ID_CURRENT_SITE', $_SERVER['BLOG_ID_CURRENT_SITE']);
+
+//define('SUNRISE', 'on' ); // Multisite Domain Mapping
+
 
 /** 	Define Error Logging
  ****************************************/
