@@ -43,6 +43,8 @@ if (strpos($_SERVER['HTTP_X_FORWARDED_PROTO'], 'https') !== false)
 //define('SITE_ID_CURRENT_SITE', $_SERVER['SITE_ID_CURRENT_SITE']);
 //define('BLOG_ID_CURRENT_SITE', $_SERVER['BLOG_ID_CURRENT_SITE']);
 
+/** 	Domain Mapping
+ ****************************************/
 //define('SUNRISE', 'on' ); // Multisite Domain Mapping
 
 
@@ -87,12 +89,13 @@ define('WP_AUTO_UPDATE_CORE', false );
 
 /** Temp Directory
  ****************************************/
-define( 'WP_TEMP_DIR', '/var/app/current/wp-content/temp' );
+define( 'WP_TEMP_DIR', '/var/app/current/wp-content/temp/' );
 
 /** Define Upload Limit
 (This is also defined as 256MB in .htaccess then restricted here)
  ****************************************/
 define('WP_MEMORY_LIMIT', $_SERVER['WP_MEMORY_LIMIT']);
+define('WP_MAX_MEMORY_LIMIT', $_SERVER['WP_MAX_MEMORY_LIMIT']);
 
 /*********************************************/
 /* That's all, stop editing! Happy blogging. */
