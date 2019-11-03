@@ -9,15 +9,18 @@
 
 /** 	MySQL settings
  ****************************************/
+/** ElasticBeans has autoinjected env variables. */
+/** If your application has RDS configured as part of app, don't change this */
 
 /** The name of the database for WordPress */
-define('DB_NAME', $_SERVER['DB_NAME']);
+define('DB_NAME', $_SERVER['RDS_DB_NAME']);
 /** MySQL database username */
-define('DB_USER', $_SERVER['DB_USER']);
+define('DB_USER', $_SERVER['RDS_USERNAME']);
 /** MySQL database password */
-define('DB_PASSWORD', $_SERVER['DB_PASSWORD']);
+define('DB_PASSWORD', $_SERVER['RDS_PASSWORD']);
 /** MySQL hostname */
-define('DB_HOST', $_SERVER['DB_HOST']);
+define('DB_HOST', $_SERVER['RDS_HOSTNAME'] . ':' . $_SERVER['RDS_PORT']);
+
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8mb4');
 /** The Database Collate type. Don't change this if in doubt. */
